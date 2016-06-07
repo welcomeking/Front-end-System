@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Index">
+		<param name="Name" value="index">
+		<param name="Local" value="Index1.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Customer">
+		<param name="Name" value="Add Customer">
+		<param name="Local" value="AddCust.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Car">
+		<param name="Name" value="Add new Car">
+		<param name="Local" value="AddCar.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Reservation">
+		<param name="Name" value="Reserve Car">
+		<param name="Local" value="ReserveCar.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Return Car">
+		<param name="Name" value="Return Car">
+		<param name="Local" value="ReturnCar.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Login">
+		<param name="Name" value="Login">
+		<param name="Local" value="Login.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Return car from mantainance/service">
+		<param name="Name" value="Repair Car">
+		<param name="Local" value="ReturnFromMantainance.html">
+		</OBJECT>
+</UL>
+</BODY></HTML>

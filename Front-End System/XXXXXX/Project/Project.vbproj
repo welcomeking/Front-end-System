@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8C4485CE-B15F-4B30-864D-08F83F94E722}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Project.My.MyApplication</StartupObject>
+    <RootNamespace>Project</RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Customer.Designer.vb">
+      <DependentUpon>Add Customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add Customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add new car.Designer.vb">
+      <DependentUpon>Add new car.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add new car.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEmployee.Designer.vb">
+      <DependentUpon>AddEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CarReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CarReportViewig.Designer.vb">
+      <DependentUpon>CarReportViewig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CarReportViewig.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contacts.Designer.vb">
+      <DependentUpon>Contacts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contacts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomerReportview.Designer.vb">
+      <DependentUpon>CustomerReportview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerReportview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DamagedCars.Designer.vb">
+      <DependentUpon>DamagedCars.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DamagedCars.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeReports.Designer.vb">
+      <DependentUpon>EmployeeReports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeReports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employees.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Extend.Designer.vb">
+      <DependentUpon>Extend.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Extend.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtendRentalReceipt.Designer.vb">
+      <DependentUpon>ExtendRentalReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendRentalReceipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalCarPaymentReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinalCarPaymentReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FinalCarPaymentReportView.Designer.vb">
+      <DependentUpon>FinalCarPaymentReportView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FinalCarPaymentReportView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalCarReports.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinalCarReports.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FinalCarReportview.Designer.vb">
+      <DependentUpon>FinalCarReportview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FinalCarReportview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalCustomerReport1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinalCustomerReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FinalCustomerReportview.Designer.vb">
+      <DependentUpon>FinalCustomerReportview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FinalCustomerReportview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalFinancialReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinalFinancialReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FinalFinancialReportview.Designer.vb">
+      <DependentUpon>FinalFinancialReportview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FinalFinancialReportview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalFinReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinalFinReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FinalFrequencyReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinalFrequencyReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FinalFrequencyReportView.Designer.vb">
+      <DependentUpon>FinalFrequencyReportView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FinalFrequencyReportView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinancialReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FinancialReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FinancialReportviews.Designer.vb">
+      <DependentUpon>FinancialReportviews.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FinancialReportviews.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G.carpaymentsFFf.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>G.carpaymentsFFf.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="G.Cars1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>G.Cars1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="G.Customer1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>G.Customer1.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="G.Employees.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>G.Employees.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GenerateCars.Designer.vb">
+      <DependentUpon>GenerateCars.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateCars.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateCustomers.Designer.vb">
+      <DependentUpon>GenerateCustomers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateCustomers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateEmployees.Designer.vb">
+      <DependentUpon>GenerateEmployees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateEmployees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneratingReports.Designer.vb">
+      <DependentUpon>GeneratingReports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratingReports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="group2DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>group2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="group2DataSet.vb">
+      <DependentUpon>group2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.Designer.vb">
+      <DependentUpon>HomePage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RecieptReserve.Designer.vb">
+      <DependentUpon>RecieptReserve.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RecieptReserve.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnCar.Designer.vb">
+      <DependentUpon>ReturnCar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnCar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnReciepts.Designer.vb">
+      <DependentUpon>ReturnReciepts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnReciepts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCar.Designer.vb">
+      <DependentUpon>ViewCar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCustomer.Designer.vb">
+      <DependentUpon>ViewCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewEmployee.Designer.vb">
+      <DependentUpon>ViewEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewReservation.Designer.vb">
+      <DependentUpon>ViewReservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewReservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Customer.resx">
+      <DependentUpon>Add Customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add new car.resx">
+      <DependentUpon>Add new car.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEmployee.resx">
+      <DependentUpon>AddEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CarReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CarReportViewig.resx">
+      <DependentUpon>CarReportViewig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contacts.resx">
+      <DependentUpon>Contacts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CustomerReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerReportview.resx">
+      <DependentUpon>CustomerReportview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DamagedCars.resx">
+      <DependentUpon>DamagedCars.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeReports.resx">
+      <DependentUpon>EmployeeReports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Employees.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Extend.resx">
+      <DependentUpon>Extend.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtendRentalReceipt.resx">
+      <DependentUpon>ExtendRentalReceipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalCarPaymentReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FinalCarPaymentReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalCarPaymentReportView.resx">
+      <DependentUpon>FinalCarPaymentReportView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalCarReports.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FinalCarReports.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalCarReportview.resx">
+      <DependentUpon>FinalCarReportview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalCustomerReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FinalCustomerReport1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalCustomerReportview.resx">
+      <DependentUpon>FinalCustomerReportview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalFinancialReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FinalFinancialReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalFinancialReportview.resx">
+      <DependentUpon>FinalFinancialReportview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalFinReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FinalFinReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalFrequencyReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FinalFrequencyReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalFrequencyReportView.resx">
+      <DependentUpon>FinalFrequencyReportView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinancialReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FinancialReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinancialReportviews.resx">
+      <DependentUpon>FinancialReportviews.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G.carpaymentsFFf.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>G.carpaymentsFFf.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G.Cars1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>G.Cars1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G.Customer1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>G.Customer1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G.Employees.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>G.Employees.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateCars.resx">
+      <DependentUpon>GenerateCars.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateCustomers.resx">
+      <DependentUpon>GenerateCustomers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateEmployees.resx">
+      <DependentUpon>GenerateEmployees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneratingReports.resx">
+      <DependentUpon>GeneratingReports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecieptReserve.resx">
+      <DependentUpon>RecieptReserve.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnCar.resx">
+      <DependentUpon>ReturnCar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnReciepts.resx">
+      <DependentUpon>ReturnReciepts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCar.resx">
+      <DependentUpon>ViewCar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCustomer.resx">
+      <DependentUpon>ViewCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewEmployee.resx">
+      <DependentUpon>ViewEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewReservation.resx">
+      <DependentUpon>ViewReservation.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="group2DataSet.xsc">
+      <DependentUpon>group2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="group2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>group2DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="group2DataSet.xss">
+      <DependentUpon>group2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesCAZBZA6W.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untitled1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untitled2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untitled3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capital-Car-Hire_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untitled4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="help\AddCar.html" />
+    <Content Include="help\AddCar2.png" />
+    <Content Include="help\AddCust.html" />
+    <Content Include="help\AddEmployee2.png" />
+    <Content Include="help\AddView2.png" />
+    <Content Include="help\DamagedCar2.png" />
+    <Content Include="help\DamagedCarV2.png" />
+    <Content Include="help\Home2.png" />
+    <Content Include="help\Index1.html" />
+    <Content Include="help\Login.html" />
+    <Content Include="help\login2.png" />
+    <Content Include="help\ReserveCar.html" />
+    <Content Include="help\ReserveCar2.png" />
+    <Content Include="help\ReturnCar.html" />
+    <Content Include="help\ReturnCarDamaged.png" />
+    <Content Include="help\ReturnCarMInorDamage2.png" />
+    <Content Include="help\ReturnFromMantainance.html" />
+    <Content Include="help\returnNoDAmages2.png" />
+    <None Include="hlp.png" />
+    <None Include="Resources\3d_photos.png" />
+    <None Include="Resources\mes_photos.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

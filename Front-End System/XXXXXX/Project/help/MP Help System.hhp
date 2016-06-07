@@ -1,0 +1,26 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=MP Help System.chm
+Contents file=Table of Contents.hhc
+Default Window=MP Help
+Default topic=AddCar.html
+Display compile progress=No
+Full-text search=Yes
+Index file=Index.hhk
+Language=0x1c09 English (South Africa)
+
+[WINDOWS]
+MP Help="Help for MP System","Table of Contents.hhc","Index.hhk","Index1.html","Index1.html",,,,,0x22520,,0x3846,[0,0,800,600],,,,,,,0
+
+
+[FILES]
+AddCar.html
+AddCust.html
+Index1.html
+Login.html
+ReserveCar.html
+ReturnCar.html
+ReturnFromMantainance.html
+
+[INFOTYPES]
+
